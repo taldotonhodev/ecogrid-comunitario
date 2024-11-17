@@ -1,0 +1,101 @@
+/* Arquivo: HowItWorks.css */
+
+.how-it-works-page {
+  text-align: center;
+  padding: 20px;
+}
+
+.how-it-works-intro {
+  padding: 50px 20px;
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.how-it-works-intro h1 {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+}
+
+.how-it-works-intro p {
+  font-size: 1.2em;
+}
+
+.how-it-works-steps {
+  padding: 40px 20px;
+  margin-top: 20px;
+}
+
+.how-it-works-steps h2 {
+  color: var(--color-secondary);
+  margin-bottom: 20px;
+}
+
+.steps {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.step {
+  background-color: var(--color-background);
+  border: 2px solid var(--color-primary);
+  border-radius: 8px;
+  padding: 20px;
+  width: 250px;
+}
+
+.step h3 {
+  font-size: 1.5em;
+  color: var(--color-primary);
+  margin-bottom: 10px;
+}
+
+.step p {
+  font-size: 1em;
+  color: var(--color-text);
+}
+
+.how-it-works-training {
+  padding: 40px 20px;
+  background-color: var(--color-background);
+}
+
+.how-it-works-training h2 {
+  color: var(--color-primary);
+  margin-bottom: 15px;
+}
+
+.how-it-works-training p {
+  font-size: 1.1em;
+  color: var(--color-text);
+}
+
+.cta-impact {
+  padding: 40px 20px;
+  background-color: var(--color-secondary);
+  color: white;
+}
+
+.cta-impact h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.cta-impact p {
+  font-size: 1.1em;
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: var(--color-primary);
+  color: white;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: var(--color-accent);
+}

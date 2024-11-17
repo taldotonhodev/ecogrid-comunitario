@@ -1,0 +1,140 @@
+/* Arquivo: Support.css */
+
+.support-page {
+  text-align: center;
+  padding: 20px;
+}
+
+.support-intro {
+  padding: 50px 20px;
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.support-intro h1 {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+}
+
+.support-intro p {
+  font-size: 1.2em;
+}
+
+.support-options {
+  padding: 40px 20px;
+  margin-top: 20px;
+}
+
+.support-options h2 {
+  color: var(--color-secondary);
+  margin-bottom: 20px;
+}
+
+.options {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.option {
+  background-color: var(--color-background);
+  border: 2px solid var(--color-primary);
+  border-radius: 8px;
+  padding: 20px;
+  width: 250px;
+}
+
+.option h3 {
+  font-size: 1.5em;
+  color: var(--color-primary);
+  margin-bottom: 10px;
+}
+
+.option p {
+  font-size: 1em;
+  color: var(--color-text);
+}
+
+.support-impact {
+  padding: 40px 20px;
+  background-color: var(--color-background);
+}
+
+.support-impact h2 {
+  color: var(--color-primary);
+  margin-bottom: 15px;
+}
+
+.support-impact p {
+  font-size: 1.1em;
+  color: var(--color-text);
+}
+
+.support-form {
+  padding: 40px 20px;
+  background-color: var(--color-background);
+}
+
+.support-form h2 {
+  color: var(--color-secondary);
+  margin-bottom: 15px;
+}
+
+.support-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.support-form input,
+.support-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--color-primary);
+  border-radius: 5px;
+}
+
+.support-form .form-button {
+  padding: 10px 20px;
+  background-color: var(--color-primary);
+  color: white;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.support-form .form-button:hover {
+  background-color: var(--color-accent);
+}
+
+.cta-share {
+  padding: 40px 20px;
+  background-color: var(--color-secondary);
+  color: white;
+}
+
+.cta-share h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.cta-share p {
+  font-size: 1.1em;
+}
+
+.share-button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: var(--color-primary);
+  color: white;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.share-button:hover {
+  background-color: var(--color-accent);
+}

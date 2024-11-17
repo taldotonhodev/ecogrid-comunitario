@@ -1,0 +1,9 @@
+/* Arquivo: Footer.css */
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background-color: var(--color-secondary);
+  color: white;
+  font-size: 0.9em;
+}
