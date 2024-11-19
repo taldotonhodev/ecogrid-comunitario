@@ -1,0 +1,163 @@
+.impactPage {
+  text-align: center;
+}
+
+.impactIntro {
+  padding: 50px 20px;
+  background-color: var(--color-primary);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.impactIntro h1 {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.impactIntro p {
+  font-size: 1.2em;
+  width: 60%;
+}
+
+.topicTitle {
+  cursor: pointer;
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+}
+
+.topicTitle h2{
+  font-size: 2.8em;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.topicTitle p{
+  font-size: 1.3em;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); 
+  color: white;
+}
+
+.topic {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  margin-bottom: 10%;
+  border-radius: 10px;
+}
+
+.topic h2{
+  font-size: 2.2em;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.topic p {
+  font-size: 1.3em;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); 
+  color: white;
+}
+
+
+.topicContent{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.textContent {
+  opacity: 0;
+  transform: translateY(20px); 
+  transition: opacity 0.5s ease, transform 0.5s ease, box-shadow 0.5s ease; 
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
+
+.textContent.show {
+  opacity: 1; 
+  transform: translateY(0); 
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.textContent.hidden {
+  opacity: 0; 
+  transform: translateY(20px); 
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0); 
+}
+.impactEnvironmental,
+.impactSocial,
+.impactEconomic {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 20px;
+  background-color: var(--color-background);
+}
+
+.impactEnvironmental {
+  background-image: url('../imgs/health-earth.jpeg'); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+}
+
+.impactSocial {
+  background-image: url('../imgs/indigena.webp'); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-color: rgba(0, 0, 0, 0.5); 
+  background-blend-mode: darken; 
+}
+
+.impactEconomic {
+  background-image: url('../imgs/economic.jpg'); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-color: rgba(0, 0, 0, 0.5); 
+  background-blend-mode: darken; 
+}
+
+
+.ctaSupport {
+  padding: 40px 20px;
+  background-color: var(--color-secondary);
+  color: white;
+}
+
+.ctaSupport h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.ctaSupport p {
+  font-size: 1.1em;
+}
+
+.ctaButton {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: var(--color-primary);
+  color: white;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.ctaButton:hover {
+  background-color: var(--color-accent);
+}
