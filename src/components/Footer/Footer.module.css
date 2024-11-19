@@ -1,0 +1,15 @@
+.footer {
+  padding: 20px;
+  text-align: center;
+  background-color: var(--color-secondary);
+  color: white;
+  font-size: 0.9em;
+  width: 100%; /* Garante que o footer ocupe toda a largura */
+  margin: 0; /* Remove margens extras */
+  box-sizing: border-box; /* Garante que padding e bordas não causem overflow */
+}
+
+.footer p {
+  margin: 0; /* Remover a margem entre os parágrafos */
+  padding: 5px 0; /* Adicionar um leve padding interno para separação */
+}
