@@ -1,31 +1,36 @@
-/* Arquivo: Support.css */
+/* Arquivo: Support.module.css */
 
-.support-page {
+.supportPage {
   text-align: center;
-  padding: 20px;
 }
 
-.support-intro {
+.supportIntro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 50px 20px;
   background-color: var(--color-primary);
   color: white;
 }
 
-.support-intro h1 {
+.supportIntro h1 {
   font-size: 2.5em;
   margin-bottom: 15px;
+  color: white;
 }
 
-.support-intro p {
+.supportIntro p {
   font-size: 1.2em;
+  width: 50%;
 }
 
-.support-options {
+.supportOptions {
   padding: 40px 20px;
   margin-top: 20px;
 }
 
-.support-options h2 {
+.supportOptions h2 {
   color: var(--color-secondary);
   margin-bottom: 20px;
 }
@@ -37,51 +42,37 @@
   flex-wrap: wrap;
 }
 
-.option {
-  background-color: var(--color-background);
-  border: 2px solid var(--color-primary);
-  border-radius: 8px;
-  padding: 20px;
-  width: 250px;
-}
-
-.option h3 {
-  font-size: 1.5em;
-  color: var(--color-primary);
-  margin-bottom: 10px;
-}
-
-.option p {
-  font-size: 1em;
-  color: var(--color-text);
-}
-
-.support-impact {
+.supportImpact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 40px 20px;
   background-color: var(--color-background);
 }
 
-.support-impact h2 {
+.supportImpact h2 {
   color: var(--color-primary);
   margin-bottom: 15px;
 }
 
-.support-impact p {
-  font-size: 1.1em;
+.supportImpact p {
+  width: 50%;
+  font-size: 1.3em;
   color: var(--color-text);
 }
 
-.support-form {
+.supportForm {
   padding: 40px 20px;
   background-color: var(--color-background);
 }
 
-.support-form h2 {
+.supportForm h2 {
   color: var(--color-secondary);
   margin-bottom: 15px;
 }
 
-.support-form form {
+.supportForm form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -91,15 +82,15 @@
   margin: 0 auto;
 }
 
-.support-form input,
-.support-form textarea {
+.input,
+.textarea {
   width: 100%;
   padding: 10px;
   border: 1px solid var(--color-primary);
   border-radius: 5px;
 }
 
-.support-form .form-button {
+.formButton {
   padding: 10px 20px;
   background-color: var(--color-primary);
   color: white;
@@ -107,26 +98,26 @@
   transition: background-color 0.3s ease;
 }
 
-.support-form .form-button:hover {
+.formButton:hover {
   background-color: var(--color-accent);
 }
 
-.cta-share {
+.ctaShare {
   padding: 40px 20px;
   background-color: var(--color-secondary);
   color: white;
 }
 
-.cta-share h3 {
+.ctaShare h3 {
   font-size: 1.5em;
   margin-bottom: 10px;
 }
 
-.cta-share p {
+.ctaShare p {
   font-size: 1.1em;
 }
 
-.share-button {
+.shareButton {
   margin-top: 15px;
   padding: 10px 20px;
   background-color: var(--color-primary);
@@ -135,6 +126,6 @@
   transition: background-color 0.3s ease;
 }
 
-.share-button:hover {
+.shareButton:hover {
   background-color: var(--color-accent);
 }
