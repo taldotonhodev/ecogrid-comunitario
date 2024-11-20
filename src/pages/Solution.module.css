@@ -1,31 +1,37 @@
-/* Arquivo: Solution.css */
-
-.solution-page {
-  text-align: center;
-  padding: 20px;
+.solutionPage {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Garante que a página preencha toda a altura da tela */
+  margin: 0;
 }
 
-.solution-intro {
+.mainContent {
+  flex: 1;
+}
+
+.solutionIntro {
   padding: 50px 20px;
   background-color: var(--color-primary);
   color: white;
+  width: 100vw; /* Garante que ocupe toda a largura da página */
+  box-sizing: border-box; /* Inclui o padding no cálculo da largura */
 }
 
-.solution-intro h1 {
+.solutionIntro h1 {
   font-size: 2.5em;
   margin-bottom: 15px;
 }
 
-.solution-intro p {
+.solutionIntro p {
   font-size: 1.2em;
 }
 
-.solution-components {
+.solutionComponents {
   padding: 40px 20px;
   margin-top: 20px;
 }
 
-.solution-components h2 {
+.solutionComponents h2 {
   color: var(--color-secondary);
   margin-bottom: 20px;
 }
@@ -37,62 +43,45 @@
   flex-wrap: wrap;
 }
 
-.component {
-  background-color: var(--color-background);
-  border: 2px solid var(--color-primary);
-  border-radius: 8px;
-  padding: 20px;
-  width: 250px;
-}
-
-.component h3 {
-  font-size: 1.5em;
-  color: var(--color-primary);
-  margin-bottom: 10px;
-}
-
-.component p {
-  font-size: 1em;
-  color: var(--color-text);
-}
-
-.solution-benefits {
+.solutionBenefits {
   padding: 40px 20px;
   background-color: var(--color-background);
 }
 
-.solution-benefits h2 {
+.solutionBenefits h2 {
   color: var(--color-primary);
   margin-bottom: 15px;
 }
 
-.solution-benefits ul {
+.solutionBenefits ul {
   list-style-type: none;
   padding: 0;
   font-size: 1.1em;
   color: var(--color-text);
 }
 
-.solution-benefits li {
+.solutionBenefits li {
   margin: 10px 0;
 }
 
-.cta-impact {
+.ctaImpact {
   padding: 40px 20px;
   background-color: var(--color-secondary);
   color: white;
+  width: 100vw; /* Garante que ocupe toda a largura da página */
+  box-sizing: border-box; /* Inclui o padding no cálculo da largura */
 }
 
-.cta-impact h3 {
+.ctaImpact h3 {
   font-size: 1.5em;
   margin-bottom: 10px;
 }
 
-.cta-impact p {
+.ctaImpact p {
   font-size: 1.1em;
 }
 
-.cta-button {
+.ctaButton {
   display: inline-block;
   margin-top: 15px;
   padding: 10px 20px;
@@ -102,6 +91,6 @@
   transition: background-color 0.3s ease;
 }
 
-.cta-button:hover {
+.ctaButton:hover {
   background-color: var(--color-accent);
 }
