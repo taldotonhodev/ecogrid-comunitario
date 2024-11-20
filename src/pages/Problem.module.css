@@ -1,0 +1,239 @@
+.problemPage {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: var(--color-background);
+  padding: 0;
+  margin: 0;
+}
+
+.problemIntro {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 5%;
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.introContent {
+  flex: 1;
+  padding: 20px;
+  text-align: left;
+}
+
+.introContent h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.introContent p {
+  font-size: 1.5rem;
+  line-height: 2;
+}
+
+.introImage {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+}
+
+.introImage img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.introImage img:hover {
+  transform: scale(1.1);
+  opacity: 0.95;
+}
+
+/* Estatísticas */
+.problemStats {
+  padding: 50px 5%;
+  background-color: var(--color-background);
+  text-align: center;
+}
+
+.problemStats h2 {
+  font-size: 2.5rem;
+  color: var(--color-secondary);
+  margin-bottom: 2rem;
+}
+
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.stat {
+  flex: 1;
+  max-width: 280px;
+  text-align: center;
+  background-color: var(--color-background);
+  border: 2px solid var(--color-primary);
+  padding: 0; 
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden; 
+  transition: transform 0.3s ease;
+}
+
+.stat:hover {
+  transform: translateY(-5px);
+}
+
+.stat img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover; 
+}
+
+.stat h3 {
+  font-size: 2em;
+  color: var(--color-primary);
+  margin: 15px 10px; 
+}
+
+.stat p {
+  font-size: 1em;
+  color: var(--color-text);
+  margin: 10px 15px; 
+}
+
+.stat p {
+  font-size: 1rem;
+  color: var(--color-text);
+}
+
+/* Impacto Social e Econômico */
+.problemImpact {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 50px 5%;
+  background-color: var(--color-primary-light);
+  color: var(--color-text-light);
+}
+
+.impactContent {
+  flex: 1;
+  padding: 20px;
+  text-align: left;
+}
+
+.impactContent h2 {
+  font-size: 2.5rem;
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+}
+
+.impactContent p {
+  font-size: 1.3rem;
+  line-height: 1.8;
+}
+
+.impactImage {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+}
+
+.impactImage img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.impactImage img:hover {
+  transform: scale(1.1);
+  opacity: 0.95;
+}
+
+/* Chamada para Ação */
+.ctaSolution {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 40px 5%;
+  background-color: var(--color-secondary);
+  color: white;
+}
+
+.ctaContent {
+  flex: 1;
+  padding: 20px;
+}
+
+.ctaContent h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.ctaContent p {
+  font-size: 1.2rem;
+}
+
+.ctaButton {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: var(--color-primary);
+  color: white;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.ctaButton:hover {
+  transform: translateY(-2px);
+}
+
+.ctaImage {
+  flex: 1;
+  text-align: center;
+}
+
+.ctaImage img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  .problemIntro,
+  .problemImpact,
+  .ctaSolution {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .introContent,
+  .impactContent,
+  .ctaContent {
+    padding: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .introImage img,
+  .impactImage img,
+  .ctaImage img {
+    max-width: 100%;
+  }
+
+  .stats {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
