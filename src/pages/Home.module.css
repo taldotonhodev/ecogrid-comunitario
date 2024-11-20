@@ -1,0 +1,200 @@
+.home-page {
+  text-align: center;
+}
+
+.intro {
+  padding: 50px 20px;
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 40px; /* Espaçamento entre a introdução e a próxima seção */
+}
+
+.intro .background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Faz a imagem cobrir toda a área do fundo */
+  filter: blur(4px); /* Aplica o desfoque */
+  z-index: -1; /* Coloca a imagem atrás do conteúdo */
+}
+
+.intro::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Cor preta com 50% de opacidade */
+  z-index: -1; /* Garante que o filtro fique abaixo do conteúdo */
+}
+
+.intro h1 {
+  font-size: 58px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.intro p {
+  color: #fff;
+  font-size: 32px;
+}
+
+
+/* Seção de Problema */
+.problem,
+.solution,
+.cta {
+  padding: 40px 20px;
+  margin-top: 20px;
+  margin-bottom: 40px; /* Adiciona espaçamento inferior para as seções */
+}
+
+.problem h2,
+.solution h2,
+.cta h3 {
+  margin-bottom: 15px;
+  font-size: 40px;
+}
+
+.problem p,
+.solution p,
+.cta p {
+  font-size: 24px;
+  text-align: justify;
+  color: var(--color-text);
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+/* Seção de Conteúdo do Problema */
+.problem .content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  margin-top: 50px;
+}
+
+.problem .problem-img {
+  max-width: 45%;
+  height: auto;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .problem .content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.video-section {
+  text-align: center;
+  background-color: var(--color-light);
+  border-radius: 10px;
+}
+
+.video-section h3 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--color-primary);
+  margin-bottom: 20px;
+}
+
+.video-section p {
+  font-size: 1.2rem;
+  color: var(--color-text);
+  margin-bottom: 30px;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.video-container {
+  position: relative;
+  width: 50%;
+  padding-top: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70%;
+  border: none;
+}
+
+.cta {
+  padding: 50px 20px;
+  text-align: center;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+  margin-top: -80px; 
+  margin-bottom: 40px; 
+}
+
+.cta h3 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--color-primary);
+  margin-bottom: 20px;
+}
+
+.cta p {
+  font-size: 1.2rem;
+  color: var(--color-text);
+  margin-bottom: 30px;
+  line-height: 1.6;
+  max-width: 800px;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.cta-button {
+  background-color: var(--color-secondary);
+  color: white;
+  padding: 12px 25px;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cta-button:hover {
+  background-color: var(--color-primary);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.cta-button:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
