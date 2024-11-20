@@ -1,6 +1,6 @@
 import React from "react";
-import Header from "../components/Header/Header"; // Import corrigido para subpasta
-import Footer from "../components/Footer/Footer"; // Import corrigido para subpasta
+import Header from "../components/Header/Header"; 
+import Footer from "../components/Footer/Footer"; 
 import "./HowItWorks.css";
 
 function HowItWorksPage() {
