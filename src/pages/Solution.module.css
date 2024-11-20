@@ -3,6 +3,7 @@
   flex-direction: column;
   min-height: 100vh; /* Garante que a página preencha toda a altura da tela */
   margin: 0;
+  overflow-x: hidden;
 }
 
 .mainContent {
@@ -20,6 +21,7 @@
 .solutionIntro h1 {
   font-size: 2.5em;
   margin-bottom: 15px;
+  color: white;
 }
 
 .solutionIntro p {

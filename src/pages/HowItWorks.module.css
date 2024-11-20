@@ -1,31 +1,29 @@
-/* Arquivo: HowItWorks.css */
-
-.how-it-works-page {
+.showItWorksPage {
   text-align: center;
   padding: 20px;
 }
 
-.how-it-works-intro {
+.howItWorksIntro {
   padding: 50px 20px;
   background-color: var(--color-primary);
   color: white;
 }
 
-.how-it-works-intro h1 {
+.howItWorksIntro h1 {
   font-size: 2.5em;
   margin-bottom: 15px;
 }
 
-.how-it-works-intro p {
+.howItWorksIntro p {
   font-size: 1.2em;
 }
 
-.how-it-works-steps {
+.howItWorksSteps {
   padding: 40px 20px;
   margin-top: 20px;
 }
 
-.how-it-works-steps h2 {
+.howItWorksSteps h2 {
   color: var(--color-secondary);
   margin-bottom: 20px;
 }
@@ -56,37 +54,37 @@
   color: var(--color-text);
 }
 
-.how-it-works-training {
+.howItWorksTraining {
   padding: 40px 20px;
   background-color: var(--color-background);
 }
 
-.how-it-works-training h2 {
+.howItWorksTraining h2 {
   color: var(--color-primary);
   margin-bottom: 15px;
 }
 
-.how-it-works-training p {
+.howItWorksTraining p {
   font-size: 1.1em;
   color: var(--color-text);
 }
 
-.cta-impact {
+.ctaImpact {
   padding: 40px 20px;
   background-color: var(--color-secondary);
   color: white;
 }
 
-.cta-impact h3 {
+.ctaImpact h3 {
   font-size: 1.5em;
   margin-bottom: 10px;
 }
 
-.cta-impact p {
+.ctaImpact p {
   font-size: 1.1em;
 }
 
-.cta-button {
+.ctaButton {
   display: inline-block;
   margin-top: 15px;
   padding: 10px 20px;
@@ -96,6 +94,6 @@
   transition: background-color 0.3s ease;
 }
 
-.cta-button:hover {
+.ctaButton:hover {
   background-color: var(--color-accent);
 }
